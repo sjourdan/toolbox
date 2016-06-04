@@ -2,8 +2,11 @@
 DOCKER_USER=sjourdan
 PRODUCT=netutils
 
-build: ## Build Container
+build: ## Build container with cache
 	docker build -t $(DOCKER_USER)/$(PRODUCT) .
+
+build-nocache: ## Build container without cache
+	docker build --no-cache -t $(DOCKER_USER)/$(PRODUCT) .
 tests: ## Launch tests
 	 docker run --rm sjourdan/netutils /tmp/tests.sh
 help:
