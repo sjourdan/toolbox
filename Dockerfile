@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER Stephane Jourdan <sjourdan@greenalto.com>
-ENV REFRESHED_AT 2016-06-03
+LABEL version="20160604"
 RUN apt-get update -y && apt-get install -y \
   dnsutils \
   netcat \

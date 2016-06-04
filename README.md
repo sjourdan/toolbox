@@ -18,6 +18,11 @@ Examples:
 
     make build
 
+Find container's last updated date:
+
+    docker inspect --format '{{json .Config.Labels}}' sjourdan/netutils
+    {"version":"20160603"}
+
 ## Test
 
     make tests
