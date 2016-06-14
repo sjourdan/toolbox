@@ -16,3 +16,9 @@
 `which tcpdump` --version
 # test for traceroute
 `which traceroute` --version
+# test for mtr
+`which mtr` --version
+# test for htop
+`which htop` --version
+# test for iftop
+`which iftop` -h

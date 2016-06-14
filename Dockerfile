@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER Stephane Jourdan <sjourdan@greenalto.com>
-LABEL version="20160604"
+LABEL version="20160614"
 RUN apt-get update -y && apt-get install -y \
   dnsutils \
   netcat \
@@ -8,6 +8,10 @@ RUN apt-get update -y && apt-get install -y \
   nmap \
   curl \
   traceroute \
-  tcpdump && \
+  tcpdump \
+  htop \
+  iftop \
+  iotop \
+  mtr-tiny &&\
   rm -rf /var/lib/apt/lists/*
 COPY tests.sh /tmp/

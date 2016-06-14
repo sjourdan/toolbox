@@ -2,7 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/sjourdan/netutils-docker.svg?style=shield)](https://circleci.com/gh/sjourdan/netutils-docker)
 
-Contains some utilities (`dig`, `netcat`, `ifconfig`, `nmap`, `curl`, `traceroute`, `tcpdump` etc)
+Contains some utilities (`dig`, `netcat`, `ifconfig`, `nmap`, `curl`, `traceroute`, `tcpdump`, `htop`, `iftop`, `iotop`, `mtr` etc)
 
 Examples:
 
