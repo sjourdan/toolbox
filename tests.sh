@@ -23,4 +23,4 @@
 # test for iftop
 `which iftop` -h
 # test for ping
-`which ping` --help
+`which ping` -h
