@@ -22,3 +22,5 @@
 `which htop` --version
 # test for iftop
 `which iftop` -h
+# test for ping
+`which ping` --help
