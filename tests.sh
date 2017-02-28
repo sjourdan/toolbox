@@ -23,4 +23,4 @@
 # test for iftop
 `which iftop` -h
 # test for ping
-`which ping` -h
+`which ping` -c1 127.0.0.1
