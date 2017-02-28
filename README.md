@@ -2,7 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/sjourdan/netutils-docker.svg?style=shield)](https://circleci.com/gh/sjourdan/netutils-docker)
 
-Contains some utilities (`dig`, `netcat`, `ifconfig`, `nmap`, `curl`, `traceroute`, `tcpdump`, `htop`, `iftop`, `iotop`, `mtr` etc)
+Contains some utilities (`dig`, `netcat`, `ifconfig`, `nmap`, `curl`, `traceroute`, `tcpdump`, `htop`, `iftop`, `iotop`, `mtr`, `ping`, etc)
 
 Examples:
 
@@ -21,7 +21,7 @@ Examples:
 Find container's last updated date:
 
     docker inspect --format '{{json .Config.Labels}}' sjourdan/netutils
-    {"version":"20160603"}
+    {"version":"20170228"}
 
 ## Test
 
