@@ -1,18 +1,17 @@
-FROM ubuntu:16.04
+FROM alpine:3.5
 MAINTAINER Stephane Jourdan <fasten@fastmail.fm>
-LABEL version="20170228"
-RUN apt-get update -y && apt-get install -y \
-  dnsutils \
-  netcat \
+LABEL version="20170303"
+RUN apk --update --no-cache add \
+  strace \
+  bind-tools \
+  netcat-openbsd \
   net-tools \
   nmap \
   curl \
-  traceroute \
   tcpdump \
   htop \
-  iftop \
+  mtr \
   iotop \
-  iputils-ping \
-  mtr-tiny &&\
-  rm -rf /var/lib/apt/lists/*
+  iftop \
+  iputils
 COPY tests.sh /tmp/
