@@ -13,5 +13,7 @@ RUN apk --update --no-cache add \
   mtr \
   iotop \
   iftop \
-  iputils
+  iputils \
+  speedtest-cli \
+  hdparm 
 COPY tests.sh /tmp/

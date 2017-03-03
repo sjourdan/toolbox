@@ -26,3 +26,7 @@
 `which ping` -c1 127.0.0.1
 # test for strace
 `which strace` -h
+# test for speedtest
+`which speedtest-cli` -h
+# test for hdparm
+`which hdparm` -h
