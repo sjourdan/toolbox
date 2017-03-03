@@ -7,7 +7,7 @@
 # test for netcat
 `which nc` -h
 # test for net-tools
-`which ifconfig` --version
+`which ifconfig` --help
 # test for nmap
 `which nmap` --version
 # test for curl
@@ -15,7 +15,7 @@
 # test for tcpdump
 `which tcpdump` --version
 # test for traceroute
-`which traceroute` --version
+`which traceroute` --help
 # test for mtr
 `which mtr` --version
 # test for htop
@@ -24,3 +24,5 @@
 `which iftop` -h
 # test for ping
 `which ping` -c1 127.0.0.1
+# test for strace
+`which strace` -h
