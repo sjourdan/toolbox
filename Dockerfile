@@ -14,4 +14,4 @@ RUN apk --update --no-cache add \
   iotop \
   iftop \
   iputils
-COPY tests-alpine.sh /tmp/
+COPY tests.sh /tmp/
