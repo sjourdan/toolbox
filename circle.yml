@@ -7,4 +7,5 @@ dependencies:
     - make build-nocache
 test:
   override:
+    - make lint
     - make tests
