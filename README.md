@@ -18,6 +18,10 @@ Examples:
 
     docker run -it --rm sjourdan/toolbox speedtest-cli
 
+    docker run -it --rm sjourdan/toolbox iostat 1 9999
+
+    docker run -it --rm sjourdan/toolbox dstat
+
     docker run -t --pid=container:web --net=container:web --cap-add sys_admin --cap-add sys_ptrace sjourdan/toolbox strace -f -p 1
 
 ## Build
