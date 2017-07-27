@@ -24,6 +24,8 @@ Examples:
 
     docker run -t --pid=container:web --net=container:web --cap-add sys_admin --cap-add sys_ptrace sjourdan/toolbox strace -f -p 1
 
+    docker run -it --rm --pid=host sjourdan/toolbox htop
+
 ## Build
 
     make build
