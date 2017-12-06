@@ -6,6 +6,8 @@ Contains some utilities (`strace`, `dig`, `netcat`, `ifconfig`, `nmap`, `curl`, 
 
 This is now using Alpine, image size around ~70MB.
 
+    docker pull sjourdan/toolbox
+
 Examples:
 
     docker run -it --rm sjourdan/toolbox dig +short github.com
@@ -27,6 +29,8 @@ Examples:
     docker run -it --rm --pid=host sjourdan/toolbox htop
     
     docker run -it --rm --privileged sjourdan/toolbox hdparm -tT /dev/xvda
+    
+    docker run -it --rm sjourdan/toolbox mtr 10.0.0.100
 
 ## Build
 
