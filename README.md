@@ -32,6 +32,12 @@ Examples:
     
     docker run -it --rm sjourdan/toolbox mtr 10.0.0.100
 
+Please note that on windows all interactive docker shells must use winpty, just preface all above examples with it. 
+
+Example:
+
+    winpty docker run -it --rm sjourdan/toolbox winmtr -s 1400 github.com
+
 ## Build
 
     make build
